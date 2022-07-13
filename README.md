@@ -7,7 +7,7 @@ Here is the datasheet for this device: https://www.ti.com/lit/ds/symlink/lmt87.p
 17f1702e1056186f86021e10f9e8e44c 0d0be8f79b70a96b1b968fea38c75f04f5e643b2 LMT87.pdf
 
 
-Main TI landing for LMT87: https://www.ti.com/product/LMT87
+Main TI.com landing for LMT87: https://www.ti.com/product/LMT87
 
 
 
@@ -56,6 +56,6 @@ https://github.com/Joe0x7F/MCP9701A
 
 # Warning:
 
-The TMP35/TMP36/TMP37 is an unpredictable product. I recommend against ever using it.
+The TMP35/TMP36/TMP37 is an unpredictable/unstable product. I recommend against ever using it.
 
 See https://github.com/Joe0x7F/TMP36.
