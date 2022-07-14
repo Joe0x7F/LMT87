@@ -117,6 +117,11 @@ AND
 
 I used 21 LMT87LPGs (TO-92S) to acquire the data. 570 different data points were used to determine the characteristic equations.
 
+LMT87LPG from DigiKey:  https://www.digikey.com/en/products/detail/texas-instruments/LMT87LPG/7427018
+
+LMT87LPG from Mouser:  https://www.mouser.com/ProductDetail/Texas-Instruments/LMT87LPG
+
+
 # Another good analog temperature sensor:
 
 https://github.com/Joe0x7F/MCP9701A
