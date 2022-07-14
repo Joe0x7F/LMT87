@@ -93,8 +93,6 @@ If Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative for
 
 Vout = [a*Temperature_In_Fahrenheit + b*VDD - ((c*1,000,000*VL)/RL) + e]/[1 - (c*1,000,000/RL)]
 
-Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout + 2.87419156362495
-
 Vout = [-0.0075608961627175765*Temperature_In_Fahrenheit + 0.0009416100793021476*VDD - ((-0.000018778567101973768*1,000,000*VL)/RL) + 2.87419156362495]/[1 - (-0.000018778567101973768*1,000,000/RL)]
 
 
