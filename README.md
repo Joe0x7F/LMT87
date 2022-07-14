@@ -37,7 +37,7 @@ The coefficient of determination (r-squared) for Equation 2 is ???????.
 
 **NOTE 2: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
-**NOTE 3: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87,.**
+**NOTE 3: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
 
 So, for example 1, if VDD is 3.30 Vdc, the ambient temperature is 77.0 degrees Fahrenheit, and RL (your equivalent load resistance) is 100K Ohms, then you would expect Vout to be approximately ????? Volts.
 
