@@ -13,7 +13,7 @@ Main TI.com landing for LMT87: https://www.ti.com/product/LMT87
 
 This project was created to help enigneers, technicians, and hobbyist quicky get the LMT87 low voltage temperature sensor working in their own projects.
 
-**The characteristic equations below should make it relatively easy for you to design your own circuits around this device.**
+**The characteristic equations below should make it relatively easy and quick for you to design your own circuits around this device.**
 
 
 # Basic circuit used to test and gather characteristic data:
