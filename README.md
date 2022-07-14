@@ -127,9 +127,13 @@ Vout = (-0.0075608961627175765*77 + 0.0009416100793021476*4.1 - ((-0.00001877856
 Besides the limitations listed in the [manufacturer's datasheet](lmt87.pdf "lmt87.pdf"), below are the ranges used in my tests to derive the characteristic equations shown above.  I anticipate adding wider temperature ranges to my tests as time and ambient temperatures permit which in turn will produce tweaks to the characteristic equations. However, I expect the characteristic equations above to be good for any situation in or "near" the domain criterion listed below.
 
 -49.6992481203007uA <= Iout <= 47.840462905559uA
+
 AND
+
 75.6 degrees F <= Temperature_In_Fahrenheit <= 91.6 degrees F
+
 AND
+
 2.703V <= Vout <= 5.5V
 
 I used 21 LMT87LPGs (TO-92S) to acquire the data. 570 different data points were used to determine the characteristic equations.
