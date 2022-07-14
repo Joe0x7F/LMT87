@@ -30,7 +30,9 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 The coefficient of determination (r-squared) for this Characteristic Equation 1 is 0.9882776686812974.
 
 **NOTE 1: Iout must be entered into the characteristic equations in uA (microAmps = 1x10^-06 Amps).**
+
 **NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+
 **NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
 
@@ -69,7 +71,9 @@ Vout = (-0.007779402248826279*77 + 0.0009733172601552494*4.1 - ((0.0000282619252
 The coefficient of determination (r-squared) for Characteristic Equation 2 is 0.990896061949286.
 
 **NOTE 1: Iout must be entered into the characteristic equations in uA (microAmps = 1x10^-06 Amps).**
+
 **NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+
 **NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
 
