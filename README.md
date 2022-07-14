@@ -38,7 +38,7 @@ Vout ~ ????? Volts
 
 
 
-# Limitations of the characteristic equation:
+# Notes and limitations of the characteristic equation:
 
 Besides the limitations listed in the [manufacturer's datasheet](lmt87.pdf "lmt87.pdf"), below are the ranges used in my tests to derive the characteristic equation shown above.  I anticipate adding wider temperature ranges to my tests as time and ambient temperatures permit which in turn will produce tweaks to the characteristic equation. However, I expect the characteristic equation above to be good for any situation in or "near" the domain criterion listed below.
 
