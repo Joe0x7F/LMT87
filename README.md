@@ -50,7 +50,7 @@ AND <br />
 
 I used 9 different LMT87s to acquire the data. 102 different data points were used to determine the characteristic equation.
 
-# Another good Temperature sensor:
+# Another good analog temperature sensor:
 
 https://github.com/Joe0x7F/MCP9701A
 
