@@ -40,12 +40,14 @@ The coefficient of determination (r-squared) for this Characteristic Equation 1 
 Example 1a:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = +25uA, then
+
 Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 25 + 2.8933598263741938 = 2.29904300211337460309 Volts
 Vout ~ 2.299 Volts
 
 Example 1b:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
+
 Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 0 + 2.8933598263741938 = 2.29833645398120683954 Volts
 Vout ~ 2.298 Volts
 
@@ -86,12 +88,14 @@ The coefficient of determination (r-squared) for Characteristic Equation 2 is 0.
 Example 2a:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = -25uA, then
+
 Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * -25 + 2.87419156362495 = 2.29633262459838475886 Volts
 Vout ~ 2.296 Volts
 
 Example 2b:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
+
 Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * 0 + 2.87419156362495 = 2.29586316042083541466 Volts
 Vout ~ 2.296 Volts
 
