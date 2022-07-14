@@ -23,48 +23,102 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 
 # Characteristic equations:
 
-Equation 1 (for 0 (uA) <= Iout <= 50 (uA):
-**Vout = ???? * TemperatureInFahrenheit + ????? * VDD + ?????? * RL + ??????**
+**Characteristic Equation 1 (for 0 (uA) <= Iout <= 50 (uA):**
 
-The coefficient of determination (r-squared) for this Equation 1 is ???????.
+**Vout = -0.007779402248826279 * Temperature_In_Fahrenheit + 0.0009733172601552494 * VDD + 0.000028261925286710542 * Iout + 2.8933598263741938**
 
-Equation 2 (for -50 (uA) <= Iout <= 0 (uA)):
-**Vout = ???? * TemperatureInFahrenheit + ????? * VDD + ?????? * RL + ??????**
-
-The coefficient of determination (r-squared) for Equation 2 is ???????.
+The coefficient of determination (r-squared) for this Characteristic Equation 1 is 0.9882776686812974.
 
 **NOTE 1: Iout must be entered into the characteristic equations in uA (microAmps = 1x10^-06 Amps).**
-
-**NOTE 2: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
-
-**NOTE 3: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
-
-So, for example 1, if VDD is 3.30 Vdc, the ambient temperature is 77.0 degrees Fahrenheit, and RL (your equivalent load resistance) is 100K Ohms, then you would expect Vout to be approximately ????? Volts.
-
-Vout = ????? * (77.0) + ?????? * (3.30) + ????? * (100) + ???????? = ?????
-
-Vout ~ ????? Volts
+**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+**NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
 
-For example 2, if VDD is 3.30 Vdc, the ambient temperature is 77.0 degrees Fahrenheit, and RL (your equivalent load resistance) is 100K Ohms, then you would expect Vout to be approximately ????? Volts.
+Example 1a:
+If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = +25uA, then
+Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 25 + 2.8933598263741938 = 2.29904300211337460309 Volts
+Vout ~ 2.299 Volts
 
-Vout = ????? * (77.0) + ?????? * (3.30) + ????? * (100) + ???????? = ?????
+Example 1b:
+If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
+Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 0 + 2.8933598263741938 = 2.29833645398120683954 Volts
+Vout ~ 2.298 Volts
 
-Vout ~ ????? Volts
 
+The following form below of Characteristic Equation 1 may be easier for you if you know the DC Thevenin equivalent of the circuit your LMT87 will drive:
+If Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
+
+Vout = [a*Temperature_In_Fahrenheit + b*VDD - ((c*1,000,000*VL)/RL) + e]/[1 - (c*1,000,000/RL)]
+
+Vout = [-0.007779402248826279*Temperature_In_Fahrenheit + 0.0009733172601552494*VDD - ((0.000028261925286710542*1,000,000*VL)/RL) + 2.8933598263741938]/[1 - (0.000028261925286710542*1,000,000/RL)]
+
+
+Example 1c:
+If the ambient temperature is 77 degrees Fahrenheit, VDD = 4.1 Volts, Iout = +25uA, VL = 0, then RL = ((2.29904300211337460309 - 0)/25)*1,000,000 = 91,961.7200845349841236 Ohms.
+
+Vout = (-0.007779402248826279*77 + 0.0009733172601552494*4.1 - ((0.000028261925286710542*1,000,000*0)/91,961.7200845349841236) + 2.8933598263741938)/(1 - (0.000028261925286710542*1,000,000/91,961.7200845349841236)) = 2.29904300211337460309 Volts
+*Compare to result of Example 1a. They are the same.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+**Characteristic Equation 2 (for -50 (uA) <= Iout <= 0 (uA)):**
+
+**Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout + 2.87419156362495**
+
+The coefficient of determination (r-squared) for Characteristic Equation 2 is 0.990896061949286.
+
+**NOTE 1: Iout must be entered into the characteristic equations in uA (microAmps = 1x10^-06 Amps).**
+**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+**NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
+
+
+Example 2a:
+If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = -25uA, then
+Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * -25 + 2.87419156362495 = 2.29633262459838475886 Volts
+Vout ~ 2.296 Volts
+
+Example 2b:
+If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
+Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * 0 + 2.87419156362495 = 2.29586316042083541466 Volts
+Vout ~ 2.296 Volts
+
+
+The following form below of Characteristic Equation 2 may be easier for you if you know the DC Thevenin equivalent of the circuit your LMT87 will drive:
+If Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
+
+Vout = [a*Temperature_In_Fahrenheit + b*VDD - ((c*1,000,000*VL)/RL) + e]/[1 - (c*1,000,000/RL)]
+
+Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout + 2.87419156362495
+
+Vout = [-0.0075608961627175765*Temperature_In_Fahrenheit + 0.0009416100793021476*VDD - ((-0.000018778567101973768*1,000,000*VL)/RL) + 2.87419156362495]/[1 - (-0.000018778567101973768*1,000,000/RL)]
+
+
+Example 2c:
+If the ambient temperature is 77 degrees Fahrenheit, VDD = 4.1 Volts, Iout = -25uA, VL = 4.1, then RL = ((2.29633262459838475886 - 4.1)/-25)*1,000,000 = 72,146.6950160646096456 Ohms.
+
+Vout = (-0.0075608961627175765*77 + 0.0009416100793021476*4.1 - ((-0.000018778567101973768*1,000,000*4.1)/72,146.6950160646096456) + 2.87419156362495)/(1 - (-0.000018778567101973768*1,000,000/72,146.6950160646096456)) = 2.29633262459838475886 Volts
+*Compare to result of Example 2a. They are the same.
 
 
 # Notes and limitations of the characteristic equations:
 
-Besides the limitations listed in the [manufacturer's datasheet](lmt87.pdf "lmt87.pdf"), below are the ranges used in my tests to derive the characteristic equation shown above.  I anticipate adding wider temperature ranges to my tests as time and ambient temperatures permit which in turn will produce tweaks to the characteristic equation. However, I expect the characteristic equation above to be good for any situation in or "near" the domain criterion listed below.
+Besides the limitations listed in the [manufacturer's datasheet](lmt87.pdf "lmt87.pdf"), below are the ranges used in my tests to derive the characteristic equations shown above.  I anticipate adding wider temperature ranges to my tests as time and ambient temperatures permit which in turn will produce tweaks to the characteristic equations. However, I expect the characteristic equations above to be good for any situation in or "near" the domain criterion listed below.
 
-76.8 degrees Fahrenheit <= Ambient Temperature <= 91.0 degrees Fahrenheit <br />
-AND <br />
-3.128 Vdc <= VDD <= 5.260 Vdc <br />
-AND <br />
-21.51K Ohm <= RL <= 221.6K Ohm
+-49.6992481203007uA <= Iout <= 47.840462905559uA
+AND
+75.6 degrees F <= Temperature_In_Fahrenheit <= 91.6 degrees F
+AND
+2.703V <= Vout <= 5.5V
 
-I used 9 different LMT87s to acquire the data. 102 different data points were used to determine the characteristic equation.
+
+I used 21 LMT87LPGs (TO-92S) to acquire the data. 507 different data points were used to determine the characteristic equations.
+
+
+# Observation:
+
+Affine characteristic Equation 2 fits the data better than affine Characteristic Equation 1, so sinking current into the LMT87 at its output perhaps produces less heat and more linear, predictable operation.
+
 
 # Another good analog temperature sensor:
 
