@@ -119,7 +119,7 @@ I used 21 LMT87LPGs (TO-92S) to acquire the data. 507 different data points were
 
 # Observation:
 
-Affine characteristic Equation 2 fits the data better than affine Characteristic Equation 1, so sinking current into the LMT87 at its output perhaps produces less heat and more linear, predictable operation.
+Affine Characteristic Equation 2 fits the data a little better than affine Characteristic Equation 1, so sinking current into the LMT87 at its output perhaps produces less heat in the LMT87 with more linear, predictable operation.
 
 
 # Another good analog temperature sensor:
