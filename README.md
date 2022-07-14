@@ -18,7 +18,7 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 
 # Basic circuit used to test and gather characteristic data:
 
-![Simple Circuit](<SimpleCircuit.png>)
+![Simple Circuit](<lmt87lpg.png>)
 
 
 # Characteristic equation:
