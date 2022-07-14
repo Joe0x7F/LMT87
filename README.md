@@ -21,7 +21,7 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 ![Simple Circuit](<lmt87lpg.png>)
 
 
-# Characteristic equation:
+# Characteristic equations:
 
 **Vout = ???? * TemperatureInFahrenheit + ????? * VDD + ?????? * RL + ??????**
 
