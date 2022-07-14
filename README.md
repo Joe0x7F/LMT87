@@ -114,7 +114,7 @@ AND
 2.703V <= Vout <= 5.5V
 
 
-I used 21 LMT87LPGs (TO-92S) to acquire the data. 507 different data points were used to determine the characteristic equations.
+I used 21 LMT87LPGs (TO-92S) to acquire the data. 570 different data points were used to determine the characteristic equations.
 
 
 # Observations:
