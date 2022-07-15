@@ -25,12 +25,12 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 
 **Characteristic Equation 1, (for 0 (uA) <= Iout <= 50 (uA)) LMT87 is sourcing current:**
 
-**Vout = -0.007779402248826279 * Temperature_In_Fahrenheit + 0.0009733172601552494 * VDD + 0.000028261925286710542 * Iout + 2.8933598263741938**
+**Vout = -0.007779402248826279 * Temperature_In_Fahrenheit + 0.0009733172601552494 * VDD + 0.000028261925286710542 * Iout_In_uA + 2.8933598263741938**
 
 The coefficient of determination (r-squared) for this Characteristic Equation 1 is 0.9882776686812974.
 
 
-**NOTE 1: Iout must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps).**
+**NOTE 1: Iout_In_uA must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps). See examples below.**
 
 **NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be postiive (+) when Iout is flowing out of the LMT87 (sourcing current) , and I am defining Iout to be negative (-) when Iout is flowing into the LMT87 (sinking current).**
 
@@ -78,12 +78,12 @@ Vout = (-0.007779402248826279 * (77) + 0.0009733172601552494 * (4.1) - ((0.00002
 
 **Characteristic Equation 2, (for -50 (uA) <= Iout <= 0 (uA)) LMT87 is sinking current:**
 
-**Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout + 2.87419156362495**
+**Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout_In_uA + 2.87419156362495**
 
 The coefficient of determination (r-squared) for Characteristic Equation 2 is 0.990896061949286.
 
 
-**NOTE 1: Iout must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps).**
+**NOTE 1: Iout_In_uA must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps).  See examples below.**
 
 **NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be postiive (+) when Iout is flowing out of the LMT87 (sourcing current) , and I am defining Iout to be negative (-) when Iout is flowing into the LMT87 (sinking current).**
 
