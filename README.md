@@ -41,19 +41,22 @@ Example 1a:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = +25uA, then
 
-Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 25 + 2.8933598263741938 = 2.29904300211337460309 Volts
+Vout = -0.007779402248826279 * (77) + 0.0009733172601552494 * (4.1) + 0.000028261925286710542 * (25) + 2.8933598263741938 = 2.29904300211337460309 Volts
+
 Vout ~ 2.299 Volts
 
 Example 1b:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
 
-Vout = -0.007779402248826279 * 77 + 0.0009733172601552494 * 4.1 + 0.000028261925286710542 * 0 + 2.8933598263741938 = 2.29833645398120683954 Volts
+Vout = -0.007779402248826279 * (77) + 0.0009733172601552494 * (4.1) + 0.000028261925286710542 * (0) + 2.8933598263741938 = 2.29833645398120683954 Volts
+
 Vout ~ 2.298 Volts
 
 
 The following form below of Characteristic Equation 1 may be easier for you if you know the DC Thevenin equivalent of the circuit your LMT87 will drive:
-If Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
+
+Let Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
 
 Vout = [a*Temperature_In_Fahrenheit + b*VDD - ((c*1,000,000*VL)/RL) + e]/[1 - (c*1,000,000/RL)]
 
@@ -66,7 +69,7 @@ If the ambient temperature is 77 degrees Fahrenheit, VDD = 4.1 Volts, Iout = +25
 
 RL = ((2.29904300211337460309 - 0)/25)*1,000,000 = 91,961.7200845349841236 Ohms.
 
-Vout = (-0.007779402248826279*77 + 0.0009733172601552494*4.1 - ((0.000028261925286710542*1,000,000*0)/91,961.7200845349841236) + 2.8933598263741938)/(1 - (0.000028261925286710542*1,000,000/91,961.7200845349841236)) = 2.29904300211337460309 Volts
+Vout = (-0.007779402248826279*(77) + 0.0009733172601552494*(4.1) - ((0.000028261925286710542*1,000,000*(0))/91,961.7200845349841236) + 2.8933598263741938)/(1 - (0.000028261925286710542*1,000,000/91,961.7200845349841236)) = 2.29904300211337460309 Volts
 
 *Compare to result of Example 1a. They are the same.
 
@@ -91,20 +94,22 @@ Example 2a:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = -25uA, then
 
-Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * -25 + 2.87419156362495 = 2.29633262459838475886 Volts
+Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * (4.1) + -0.000018778567101973768 * (-25) + 2.87419156362495 = 2.29633262459838475886 Volts
+
 Vout ~ 2.296 Volts
 
 Example 2b:
 
 If temperature is 77 degree Fahrenheit, VDD = 4.1, Iout = 0uA, then
 
-Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * 4.1 + -0.000018778567101973768 * 0 + 2.87419156362495 = 2.29586316042083541466 Volts
+Vout = -0.0075608961627175765 * (77) + 0.0009416100793021476 * (4.1) + -0.000018778567101973768 * (0) + 2.87419156362495 = 2.29586316042083541466 Volts
+
 Vout ~ 2.296 Volts
 
 
 The following form below of Characteristic Equation 2 may be easier for you if you know the DC Thevenin equivalent of the circuit your LMT87 will drive:
 
-If Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
+Let Iout (in uA) = [(Vout - VL)/RL]*1,000,000, then an equivalent alternative form of Characteristic Equation 1 is:
 
 Vout = [a*Temperature_In_Fahrenheit + b*VDD - ((c*1,000,000*VL)/RL) + e]/[1 - (c*1,000,000/RL)]
 
@@ -115,9 +120,9 @@ Example 2c:
 
 If the ambient temperature is 77 degrees Fahrenheit, VDD = 4.1 Volts, Iout = -25uA, VL = 4.1, then
 
-RL = ((2.29633262459838475886 - 4.1)/-25)*1,000,000 = 72,146.6950160646096456 Ohms.
+RL = ((2.29633262459838475886 - (4.1))/(-25))*1,000,000 = 72,146.6950160646096456 Ohms.
 
-Vout = (-0.0075608961627175765*77 + 0.0009416100793021476*4.1 - ((-0.000018778567101973768*1,000,000*4.1)/72,146.6950160646096456) + 2.87419156362495)/(1 - (-0.000018778567101973768*1,000,000/72,146.6950160646096456)) = 2.29633262459838475886 Volts
+Vout = (-0.0075608961627175765*(77) + 0.0009416100793021476*(4.1) - ((-0.000018778567101973768*1,000,000*(4.1))/72,146.6950160646096456) + 2.87419156362495)/(1 - (-0.000018778567101973768*1,000,000/72,146.6950160646096456)) = 2.29633262459838475886 Volts
 
 *Compare to result of Example 2a. They are the same.
 
