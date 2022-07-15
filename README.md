@@ -1,5 +1,5 @@
 # LMT87
-The LMT87 device is a precision CMOS analog temperature sensor with a linear output voltage that is inversely proportional to temperature.
+The LMT87 device is a precision CMOS analog temperature sensor with a linear output voltage that is inversely proportional to temperature. "A push-pull output gives the LMT87 the ability to sink and source significant current."
 
 Here is the datasheet for this device: https://www.ti.com/lit/ds/symlink/lmt87.pdf
 
