@@ -143,6 +143,9 @@ AND
 
 I used 21 LMT87LPGs (TO-92S) to acquire the data. 570 different data points were used to determine the characteristic equations.
 
+
+# Places to buy:
+
 LMT87LPG from DigiKey:  https://www.digikey.com/en/products/detail/texas-instruments/LMT87LPG/7427018
 
 LMT87LPG from Mouser:  https://www.mouser.com/ProductDetail/Texas-Instruments/LMT87LPG?qs=5aG0NVq1C4x9nVDnkGXLCQ%3D%3D
