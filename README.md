@@ -32,7 +32,7 @@ The coefficient of determination (r-squared) for this Characteristic Equation 1 
 
 **NOTE 1: Iout must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps).**
 
-**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87 (sourcing current) , and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87 (sinking current).**
 
 **NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
@@ -82,7 +82,7 @@ The coefficient of determination (r-squared) for Characteristic Equation 2 is 0.
 
 **NOTE 1: Iout must be entered into the characteristic equations in uA (1 microAmp = 1x10^-06 Amps).**
 
-**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87, and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87.**
+**NOTE 2: Regarding these characteristic equations and the schematic above, I am defining Iout to be a postiive (+) when Iout is flowing out of the LMT87 (sourcing current) , and I am defining Iout to be a negative (-) when Iout is flowing into the LMT87 (sinking current).**
 
 **NOTE 3: From the manufacturer's datasheet, Iout must be:  -50uA <= Iout <= 50uA  for normal temperature sensing operation.**
 
