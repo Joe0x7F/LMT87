@@ -147,6 +147,10 @@ LMT87LPG from DigiKey:  https://www.digikey.com/en/products/detail/texas-instrum
 
 LMT87LPG from Mouser:  https://www.mouser.com/ProductDetail/Texas-Instruments/LMT87LPG?qs=5aG0NVq1C4x9nVDnkGXLCQ%3D%3D
 
+LMT87LPG from Arrow: https://www.arrow.com/en/products/lmt87lpg/texas-instruments
+
+LMT87LPG from  from Newark: https://www.newark.com/texas-instruments/lmt87lpg/temperature-sensor-0-4deg-c-to/dp/52AH7150
+
 
 # Observations:
 
