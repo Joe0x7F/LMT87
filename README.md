@@ -23,7 +23,7 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 
 # Characteristic equations:
 
-**Characteristic Equation 1 (for 0 (uA) <= Iout <= 50 (uA):**
+**Characteristic Equation 1, (for 0 (uA) <= Iout <= 50 (uA)) LMT87 is sourcing current:**
 
 **Vout = -0.007779402248826279 * Temperature_In_Fahrenheit + 0.0009733172601552494 * VDD + 0.000028261925286710542 * Iout + 2.8933598263741938**
 
@@ -76,7 +76,7 @@ Vout = (-0.007779402248826279*(77) + 0.0009733172601552494*(4.1) - ((0.000028261
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-**Characteristic Equation 2 (for -50 (uA) <= Iout <= 0 (uA)):**
+**Characteristic Equation 2, (for -50 (uA) <= Iout <= 0 (uA)) LMT87 is sinking current:**
 
 **Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout + 2.87419156362495**
 
