@@ -143,7 +143,7 @@ LMT87LPG from DigiKey:  https://www.digikey.com/en/products/detail/texas-instrum
 LMT87LPG from Mouser:  https://www.mouser.com/ProductDetail/Texas-Instruments/LMT87LPG?qs=5aG0NVq1C4x9nVDnkGXLCQ%3D%3D
 
 
-#Observations:
+# Observations:
 
 Please note that the value of VDD used to create "Table 3. LMT87 Transfer Table" in LMT87.pdf is not given in LMT87.pdf.
 
