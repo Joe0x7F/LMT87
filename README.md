@@ -10,7 +10,6 @@ Here is the datasheet for this device: https://www.ti.com/lit/ds/symlink/lmt87.p
 Main TI.com landing for LMT87: https://www.ti.com/product/LMT87
 
 
-
 This project was created to help enigneers, technicians, and hobbyist quicky get the LMT87 low voltage temperature sensor working in their own projects.
 
 **The characteristic equations below should make it relatively easy and quick for you to design your own circuits around this device.**
@@ -23,7 +22,7 @@ This project was created to help enigneers, technicians, and hobbyist quicky get
 
 # Characteristic equations:
 
-**Characteristic Equation 1, (for 0 (uA) <= Iout <= 50 (uA)) LMT87 is sourcing current:**
+**Characteristic Equation 1, FOR 0 (uA) <= Iout <= 50 (uA), LMT87 is sourcing current:**
 
 **Vout = -0.007779402248826279 * Temperature_In_Fahrenheit + 0.0009733172601552494 * VDD + 0.000028261925286710542 * Iout_In_uA + 2.8933598263741938**
 
@@ -76,7 +75,7 @@ Vout = (-0.007779402248826279 * (77) + 0.0009733172601552494 * (4.1) - ((0.00002
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-**Characteristic Equation 2, (for -50 (uA) <= Iout <= 0 (uA)) LMT87 is sinking current:**
+**Characteristic Equation 2, FOR -50 (uA) <= Iout <= 0 (uA), LMT87 is sinking current:**
 
 **Vout = -0.0075608961627175765 * Temperature_In_Fahrenheit + 0.0009416100793021476 * VDD + -0.000018778567101973768 * Iout_In_uA + 2.87419156362495**
 
